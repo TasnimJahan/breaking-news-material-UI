@@ -1,11 +1,16 @@
-.App {
-  text-align: center;
+.divContainer{
+  text-align:center;
+  margin: 0 auto;
+  align-items: center;
+}
+.cards{
+  display:flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 2rem;
+  justify-content:center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

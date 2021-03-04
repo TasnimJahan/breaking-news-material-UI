@@ -13,12 +13,14 @@ function App() {
     .then(data =>setArticles(data.articles))
   },[])
   return (
-    <div>
+    <div className="divContainer">
       <Bar></Bar>
       <h2>Headlines: {articles.length}</h2>
+      <div className="cards">
       {
         articles.map(article => <News article={article}></News>)
       }
+      </div>
       {/* <Button color="primary">Hello World</Button>
       <Button variant="contained">Default</Button>
       <Button variant="contained" color="primary">Primary</Button>
